@@ -1,0 +1,245 @@
+/*----------   GLOBAL CSS   ----------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+li,
+button {
+  font-size: 2rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*------------    HEADER   ----------*/
+
+.main-head {
+  background: rgb(23, 79, 116);
+  color: #fff;
+}
+
+nav {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.main-head ul li {
+  padding: 0.8rem 2.5rem;
+  border-radius: 3px;
+}
+.active,
+.main-head ul li:hover {
+  background: rgb(109, 158, 190);
+}
+
+.main-head .fa {
+  margin-left: 8px;
+}
+.contact {
+  position: relative;
+}
+.sub-contact {
+  display: none;
+  position: absolute;
+  top: 3.9rem;
+}
+.main-head ul li:hover .sub-contact {
+  width: 100%;
+
+  display: block;
+  background: rgb(23, 79, 116);
+  margin-left: -15px;
+}
+
+.main-head ul li:hover .sub-contact ul {
+  display: block;
+  margin: 5px;
+}
+
+.main-head ul li:hover .sub-contact ul li {
+  padding: 10px;
+  border-bottom: 1px dotted rgb(255, 255, 255);
+  text-align: left;
+  border-radius: 0;
+}
+
+.main-head ul li:hover .sub-contact ul li:last-child {
+  border-bottom: none;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pacifico", cursive;
+  font-weight: normal;
+}
+
+/*     HERO   */
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgb(0, 0, 0), transparent),
+    url("background-space.jpg");
+  background-size: cover;
+  background-position: bottom;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: CENTER;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 4rem;
+}
+
+.hero button {
+  padding: 2rem 6rem;
+  background: rgb(23, 79, 116);
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+}
+
+/*----------  sign in  --------*/
+#sign-in {
+  background-color: rgb(218, 162, 170);
+  min-height: 100vh;
+  background: linear-gradient(rgb(0, 0, 0, 0.4), transparent),
+    url("travail.jpg");
+  background-size: cover;
+  background-position: bottom;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: CENTER;
+  align-items: center;
+  position: relative;
+}
+
+.carre {
+  height: 70%;
+  width: 40%;
+  margin: 15% auto;
+  background: white;
+
+  text-align: center;
+}
+
+.carre h1 {
+  margin: 10px;
+  color: black;
+  margin-top: 25px;
+}
+
+.carre h5 {
+  font-size: 1.4rem;
+  color: black;
+  margin-left: 1%;
+  float: left;
+}
+.carre ul li {
+  list-style: none;
+}
+.carre ul {
+  margin: 10% 0;
+}
+.carre ul li input {
+  margin: 20px;
+  width: 80%;
+  font-size: 18px;
+}
+
+.checkbox {
+  margin-top: 0.3%;
+  margin-left: 13%;
+  float: left;
+}
+
+.carre button {
+  padding: 2rem 4rem;
+  margin: 2rem auto;
+  background: rgb(23, 79, 116);
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+}
+.check {
+  margin-top: -4rem;
+}
+@media (max-width: 1050px) {
+  .carre {
+    width: 70%;
+  }
+}
+
+@media (max-width: 730px) {
+  html {
+    font-size: 50%;
+  }
+  nav {
+    text-align: center;
+  }
+
+  .main-head ul li {
+    font-size: 2.5rem;
+  }
+
+  .sub-contact ul li {
+    font-size: 2.2rem;
+  }
+  .sub-contact {
+    height: 170px;
+    top: 4.3rem;
+  }
+  #logo {
+    padding: 2rem;
+    font-size: 4rem;
+  }
+  .carre {
+    width: 80%;
+  }
+}
+@media (max-width: 570px) {
+  .carre {
+    width: 90%;
+  }
+}
