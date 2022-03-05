@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -42,7 +43,9 @@ a {
   background: rgb(23, 79, 116);
   color: #fff;
 }
-
+#logo {
+  text-align: start;
+}
 nav {
   min-height: 10vh;
   display: flex;
@@ -55,12 +58,11 @@ nav {
 nav ul {
   display: flex;
   flex: 1 1 40rem;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
   list-style: none;
 }
 .main-head ul li {
-  padding: 0.8rem 2.5rem;
+  padding: 0.8rem 2rem;
   border-radius: 3px;
 }
 .active,
@@ -157,7 +159,7 @@ nav ul {
 .carre {
   height: 70%;
   width: 40%;
-  margin: 15% auto;
+  margin: 10% auto;
   background: white;
 
   text-align: center;
@@ -185,6 +187,8 @@ nav ul {
   margin: 20px;
   width: 80%;
   font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .checkbox {
@@ -211,6 +215,11 @@ nav ul {
   }
 }
 
+@media (max-width: 907px) {
+  nav #logo {
+    text-align: center;
+  }
+}
 @media (max-width: 730px) {
   html {
     font-size: 50%;
