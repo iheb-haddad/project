@@ -252,3 +252,9 @@ nav ul {
     width: 90%;
   }
 }
+
+@media (max-width: 410px) {
+  html {
+    font-size: 40%;
+  }
+}
