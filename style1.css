@@ -82,7 +82,7 @@ nav ul {
   top: 3.9rem;
 }
 .main-head ul li:hover .sub-contact {
-  width: 100%;
+  width: 110%;
 
   display: block;
   background: rgb(23, 79, 116);
