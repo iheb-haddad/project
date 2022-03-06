@@ -257,4 +257,7 @@ nav ul {
   html {
     font-size: 40%;
   }
-}
+  .main-head ul li:hover .sub-contact {
+    width: 130%;
+  }
+
